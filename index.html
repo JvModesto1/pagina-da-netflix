@@ -5,12 +5,15 @@
     <meta htstp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="js/teste.js">
     <!--responsividade-->
     <link rel="stylesheet" href="style/responsive.css">
 
 <!--owl css-->
 <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
 <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+<!--icone da netflix na aba do site-->
+<link rel="shortcut icon" href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico">
 
     <title>Netflix Clone</title>
 </head>
@@ -18,13 +21,25 @@
     <header>
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
-            <nav>
+            <nav class="nav-botoes">
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
                 <a href="#">Filmes</a>
                 <a href="#">Documentarios</a>
             </nav>
-        </div>
+           
+            <div class="searchTab">
+                <input type="text" class="search-txt" placeholder="Filme, série ou jogo"> 
+                <a href="#" class="search-btn"></a>
+                <img src="img/magnifying-glass-solid.svg" alt="Lupa" height="20" width="20" >
+    </div>    
+
+            <div class="notification">
+                <span class="notifications1">
+                    <button class="notificationbtn"></button>
+                </span>
+            </div>
+
     </header>
 
     <main>
@@ -48,7 +63,7 @@
 
 
     <div>
-        <h3>Em alta</h3>
+        <h2 class="classificacoes_filmes">ORIGINALS</h2>
     </div>
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
@@ -76,8 +91,19 @@
             </div>            <div class="item">
                 <img class="box-filme" src="img/min11.jpg" alt="">
             </div>
-            <div class="item">
-                <img class="box-filme" src="img/foto1.jpg" alt="">
+        
+        </div>
+
+        <h3>Comédias</h3>
+
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owwl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/foto1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/foto2.jfif" alt="">
+                </div>
             </div>
         </div>
 
@@ -86,5 +112,7 @@
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+
+   
 </body>
 </html>
